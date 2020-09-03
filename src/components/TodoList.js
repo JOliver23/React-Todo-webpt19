@@ -7,12 +7,13 @@ const ToDoList = props => {
     return (
         <div className= 'todo-list-container'>
             <div className='list'>
-            {/* {props.todo-list.map(todo-item => (
+            {props.todos.map(todo => (
                 <Todo 
-                    toggler={props.toggleComplete}
-                    key={todo-item.id}
-                    todo={todo-item}
-            ))} */}
+                    // toggler={props.toggleComplete}
+                    key={todo.id}
+                    todo={todo}
+                />
+            ))}
             </div>
             <button className='completed-btn'>Clear Completed Items</button>
         </div>

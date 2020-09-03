@@ -6,7 +6,7 @@ const todo_items = [{
   task: "",
   complete: false,
   id: ""
-}]
+}];
 
 class App extends React.Component {
   // you will need a place to store your state in this component.
@@ -32,7 +32,8 @@ class App extends React.Component {
       <div>
         <h2>Welcome to your Todo App!</h2>
         <TodoForm addTask={this.addTask} />
-        <ToDoList />
+        <ToDoList 
+        todos={this.state.todo_items}/>
       </div>
     );
   }
